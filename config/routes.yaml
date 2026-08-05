@@ -7,5 +7,15 @@
 # To list all registered routes, run the following command:
 #   bin/console debug:router
 
-controllers:
-    resource: routing.controllers
+# Main app controllers
+app_routes:
+    type: attribute
+    resource: '../src/Controller/'
+
+# NOTE: bundle routes are no longer imported from `packages/` here to allow the root
+# repository to be cloned without package sources. When bundles are installed via
+# Composer (vendor/ or via path repository), import their routes manually or add
+# path repositories to root `composer.json` during development.
+
+
+

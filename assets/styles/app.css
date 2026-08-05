@@ -1,3 +1,13 @@
+/* 1 lokalne ładowanie bootstrapa */ 
+@import "../vendor/bootstrap/dist/css/bootstrap.min.css"; 
+
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities; 
+
+/* Instrukcja absolutna dla Tailwind v4 */ 
+@source "/var/www/html/symfonypodstawa/src/bundle/Mms7SymfonyPakieciarnia/LokalneDomowe/templates/**/*.html.twig"; 
+
 body {
     background-color: skyblue;
 }

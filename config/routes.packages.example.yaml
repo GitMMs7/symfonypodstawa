@@ -1,0 +1,20 @@
+# Examples: how to import package routes after installing packages via Composer
+
+# If packages are installed in vendor/ (published on Packagist):
+# lokalne_domowe_routes:
+#   resource: '../vendor/mms7/lokalne-domowe-bundle/src/Resources/config/routes.yaml'
+#   prefix: ''
+#
+# archiwista_routes:
+#   resource: '../vendor/mms7/archiwista-bundle/src/Resources/config/routes.xml'
+#   prefix: ''
+
+# If you use composer path repository with symlinks (development):
+# lokalne_domowe_routes:
+#   resource: '../packages/Mms7SymfonyPakieciarnia/LokalneDomoweBundle/src/Resources/config/routes.yaml'
+#   prefix: ''
+#
+# archiwista_routes:
+#   resource: '../packages/Mms7SymfonyPakieciarnia/ArchiwistaBundle/src/Resources/config/routes.xml'
+#   prefix: ''
+

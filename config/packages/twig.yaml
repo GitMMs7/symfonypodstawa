@@ -1,6 +1,9 @@
 twig:
     file_name_pattern: '*.twig'
 
+    paths: 
+        '%kernel.project_dir%/packages/Mms7SymfonyPakieciarnia/LokalneDomoweBundle/src/View': LokalneDomowe
+        
 when@test:
     twig:
         strict_variables: true
